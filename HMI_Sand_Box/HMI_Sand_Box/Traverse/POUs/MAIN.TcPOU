@@ -1,13 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1">
-  <POU Name="MAIN" Id="{507c972b-c2fd-445b-a16a-d48ecf9a24a3}">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="MAIN" Id="{507c972b-c2fd-445b-a16a-d48ecf9a24a3}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
+	
+TimeStamper : NT_GetTime;
+integer : INT;
+mySQlsimulation : Array[1..100, 1..2]; 
+
 END_VAR
-]]>
-    </Declaration>
+]]></Declaration>
     <Implementation>
       <ST><![CDATA[]]></ST>
     </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="2" Count="0" />
+    </LineIds>
   </POU>
 </TcPlcObject>
